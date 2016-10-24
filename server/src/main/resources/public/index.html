@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Chatty</title>
+    <link href="/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <p>
+      Hi! Welcome to chatty!
+    </p>
+    <div id="login-pane">
+      <form id="login-form">
+        <p>Please login!</p>
+        <input type="text" name="name" id="username-field" placeholder="Username"/>
+        <button type="submit">Join!</button>
+      </form>
+    </div>
+    <div id="connected" class="hidden">
+      <ul id="chat"></ul>
+      <button id="clear-log">Clear History</button>
+      <form id="msg-form">
+        <input type="text" id="msg-box" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+  <script src="chat.js"></script>
+</html>
