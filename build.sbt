@@ -1,7 +1,7 @@
 name := "chatty"
 version := "0.1.0-SNAPSHOT"
 
-scalaVersion in ThisBuild := "2.11.8"
+scalaVersion in ThisBuild := "2.12.1"
 
 lazy val commonSettings = Seq(
   scalacOptions ++= Seq(
@@ -26,7 +26,7 @@ lazy val server =
     .settings(commonSettings: _*)
     .settings(
       libraryDependencies ++= Seq(
-        "com.typesafe.akka" %% "akka-http-experimental" % "2.4.11" 
+        "com.typesafe.akka" %% "akka-http" % "10.0.3" 
       )
     )
     .dependsOn(core)
